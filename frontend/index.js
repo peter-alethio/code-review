@@ -1,3 +1,8 @@
-function todo() {
+new (function() {
 
-}
+    function init() {
+
+    }
+
+    init();
+})();
