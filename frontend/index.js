@@ -1,6 +1,7 @@
 function Todo ({title, tag}) {
 
     const CLICK_EVENT = 'click';
+    const INPUT_ELEMENT = "input";
 
     const init = () => {
         this.title = title;
@@ -13,6 +14,8 @@ function Todo ({title, tag}) {
         this.$todo = document.querySelector(this.$tag);
         this.$todo.appendChild(document.createTextNode(this.title))
         this.$todo.addEventListener(CLICK_EVENT, () => alert(this.title))
+
+        this.$todo.appendChild(document.createElement(INPUT_ELEMENT))
     }
 
     init();
